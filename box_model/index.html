@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: lightgray;
+        }
+
+        .papa{
+            display: block;
+            margin: 100px;
+            padding: 50px 30px 40px 20px;
+            width: 500px;
+            height: auto;
+            background-color: red;
+            border-left: rgb(43, 43, 163) solid 20px;
+            border-right:purple dashed 10px;
+            border-top: rgb(199, 187, 22) double 15px;
+            border-bottom: rgb(1, 177, 201) solid 5px;
+            }
+
+        .hijo{
+            display: block;
+            width: 200px;
+            height: 200px;
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-bottom: 50px;
+            padding-right: 50px;
+            border: black solid 5px;
+            background-color: rgb(30,32,184);  
+        }
+
+        .hijo1{
+            margin:20px auto 50px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="papa">
+        <div class="hijo hijo1">soy el hijo 1</div>
+        <div class="hijo hijo1">soy el hijo 2</div>
+    </div>
+</body>
+</html>
