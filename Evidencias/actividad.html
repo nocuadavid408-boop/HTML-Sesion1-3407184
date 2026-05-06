@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Importacion de fuentes*/
+        @font-face {
+            font-family: 'Inter';
+            src: url('inter/Inter.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+       
+        @font-face {
+            font-family: 'Inter';
+            src: url('inter/Inter.ttf') format('truetype');
+            font-weight: 700;
+            font-style: bold;
+            font-display: swap;
+        }
+        
+        *{
+            margin:0;
+            padding: 0;
+        }
+
+        body{
+            background-color: lightgray;
+            font-family: 'Inter', sans-serif;
+        }
+ 
+        .card{
+            width: 300px;
+            height: auto;
+            /*fondo*/
+            background-color: white;
+            /*centrado*/
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow:5px 1px 13px 4px rgb(45,50,176);
+            border-radius: 15px;
+        }
+
+        .card__empresa{
+            width: 100%;
+            height: 100px;
+            background-color: #3E3E40;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            /*texto*/
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+
+        .card__flag{
+            background-color: #76C4C4;
+            height: 60px;
+        }
+
+        .card__retrato{
+            width: 150px;
+            height: 150px;
+            display: block;
+            /*distorcion*/
+            object-fit: cover;
+            /*posicionamiento*/
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -100px;
+            /*borde*/
+            border-radius: 50%;
+            border:white solid 5px;
+         }
+
+         .card__nombre{
+            text-align: center;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 20px;
+            /*espaciar letras*/
+            letter-spacing: 3px;
+         }
+
+         .card__nombre--negrita{
+            font-weight: bold;
+         }
+
+         .card__profesion{
+            text-align: center;
+            color: #76C4C4;
+         }
+
+         .card__tabla{
+            font-size: 12px;
+            width: 200px;
+
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:20px;
+         }
+
+         .card__tabla--atributo{
+            font-weight: bold;
+            color: #76C4C4;
+         }
+
+
+    </style>
+</head>
+<body>
+    <!--contenerdor-->
+    <div class="card">
+        <div class="card__empresa">
+            SENA CGMLTI
+        </div>
+        <!--FLAG(turquesa)-->
+        <div class="card__flag">
+        </div>
+        <!--retrato-->
+        <img class="card__retrato" src="retrato.jpg" alt="Retrato">
+        <!--Nombre-->
+        <div class="card__nombre"> Darly 
+                                 <span class="card__nombre--negrita" > Novoa </span>
+        </div>
+        <!--profesion-->
+        <div class="card__profesion"> Web Desing & Developer </div>
+        <table class="card__tabla">
+            <tr>
+                <td class="card__tabla--atributo">ID</td>
+                <td>12345</td>
+            </tr>
+            <tr>
+                <td class="card__tabla--atributo">Correo</td>
+                <td>nosequeponer@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
