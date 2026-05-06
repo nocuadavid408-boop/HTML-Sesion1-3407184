@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Techton</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lightgray;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            width: 280px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .card__top {
+            background-color: #E07B20;
+            padding: 10px 10px 0px;
+        }
+
+        .card__foto {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            object-position: top center;
+            display: block;
+            border-radius:  10px 10px 0px 0px;
+        }
+
+        .card__body {
+            background-color: #2E2E30;
+            padding: 20px 20px 28px;
+            text-align: center;
+            border-radius: 10px 10px 5px 5px;
+        }
+
+        .card__nombre {
+            color: #e7b25c;
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .card__bio {
+            color: white;
+            font-size: 13px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .card__boton {
+            background-color: #F5A623;
+            color: #1A1A1A;
+            border: none;
+            border-radius: 22px;
+            padding: 10px 44px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+
+        <div class="card__top">
+            <img class="card__foto" src="obama.jpg" alt="Samuel Techton">
+        </div>
+
+        <div class="card__body">
+            <div class="card__nombre">Samuel Techton</div>
+            <div class="card__bio">
+                Software engineer with a knack for problem-solving, I thrive on
+                coding challenges and crafting elegant solutions.
+            </div>
+            <button class="card__boton">Follow</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
